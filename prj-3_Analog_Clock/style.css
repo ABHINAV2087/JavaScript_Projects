@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-image: linear-gradient(to top, rgb(111, 101, 101) , rgb(255, 252, 252)); */
+    background-color: rgb(195, 240, 242);
+    font-family: gilroy;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#clock-wrapper{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(150, 228, 240, 0.709);
+    border-radius:100px ;
+    box-shadow: 30px 30px 30px-10px rgba(0,0,0,0.15), inset 15px 15px 10px rgba(255, 255, 255, 0.75) -15px -15px 35px rgba(255, 255, 255, 0.55) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px -10px 150px rgb(106, 111, 112);
+}
+
+#clock{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgba(123, 184, 194, 0.709);
+    border: 2px solid rgba(0, 0, 0, 0.356);
+    box-shadow: 10px -10px 150px rgb(159, 172, 174);
+    position: relative;
+    
+}
+
+
+#center{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    top: 48%;
+    left: 48%;
+    position: absolute;
+    z-index: 9;
+    
+    
+}
+#num{
+    /* margin-top: -44%; */
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+.hour{
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px rgba(13, 13, 13, 0.586);
+    color: rgba(123, 170, 154, 0.787);
+    position: absolute;
+    
+}
+#hour-12{
+    margin-top: -1%;
+    font-size: 45px;
+    -webkit-text-stroke: 1px rgb(241, 233, 233);
+    color: rgba(23, 24, 24, 0.461);
+}
+#hour-6{
+    margin-top: 85%;
+    font-size: 45px;
+    -webkit-text-stroke: 1px rgb(241, 233, 233);
+    color: rgba(23, 24, 24, 0.637);
+}
+#hour-3{
+    margin-top: 40%;
+    margin-left: 85%;
+    font-size: 45px;
+    -webkit-text-stroke: 1px rgb(241, 233, 233);
+    color: rgba(23, 24, 24, 0.637);
+}
+#hour-9{
+    margin-top: 40%;
+    margin-left: -85%;
+    font-size: 45px;
+    -webkit-text-stroke: 1px rgb(241, 233, 233);
+    color: rgba(23, 24, 24, 0.637);
+}
+#hour-1{
+    margin-top: 8%;
+    margin-left: 48%;
+}
+#hour-11{
+    margin-top:8%;
+    margin-left: -48%;
+}
+#hour-2{
+    margin-top: 23%;
+    margin-left: 75%;
+}
+#hour-10{
+    margin-top: 23%;
+    margin-left: -75%;
+}
+#hour-4{
+    margin-top: 67%;
+    margin-left: 75%;
+}
+#hour-8{
+    margin-top: 67%;
+    margin-left: -75%;
+}
+#hour-5{
+    margin-top: 83%;
+    margin-left: 48%;
+}
+#hour-7{
+    margin-top: 83%;
+    margin-left: -48%;
+}
+
+
+#hour-hand{
+    height: 80px;
+    width: 3px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 23%;
+    left: 49%;
+    transform-origin: bottom;
+    
+}
+#arrow-hr{
+    font-size: 35px;
+    margin-top: -10px;
+
+}
+#min-hand{
+    height: 115px;
+    width: 3px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 12%;
+    left: 49%;
+    transform-origin: bottom;
+    
+}
+#arrow-min{
+    font-size: 35px;
+    margin-top: -10px;
+
+}
+#sec-hand{
+    height: 115px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 12%;
+    left: 49%;
+    transform-origin: bottom;
+    
+}

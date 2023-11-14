@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1696832610884-69ba2bb887cb?auto=format&fit=crop&q=80&w=1771&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position:calc(center);
+    background-repeat: no-repeat;
+    background-size: fill;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+/* Glassmorphism card effect */
+form {
+    height: fit-content;
+    backdrop-filter: blur(3px) saturate(200%);
+    -webkit-backdrop-filter: blur(3px) saturate(200%);
+    background-color: #b5aba256;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    align-items: center;
+}
+#form2{
+    height: fit-content;
+    margin-top: -200px;
+    gap: 10px;
+}
+#form2 h3{
+    border-bottom: 1px solid black;
+}
+input{
+    margin: 0 10px;
+    padding: 7px 15px;
+    border-radius: 15px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+   text-align: center;
+}
+h1{
+    text-align: center;
+    word-spacing: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+}
+button{
+    width: fit-content;
+    padding: 7px 20px;
+    border-radius: 10px;
+    border: transparent;
+}
+#result span{
+    border-bottom: 4px solid black;
+    font-weight: 600;
+    padding: 0px 10px;
+}

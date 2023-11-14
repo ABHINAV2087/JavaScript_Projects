@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex;flex-direction: column;justify-content: center;
+align-items: center;height: 100%;width: 100%;">
+    <h1>Hello Guys , I am learning js</h1>
+    <button id="stop">stop</button>
+
+
+
+
+    <script>
+        const sayHello = function(){
+            console.log("hello abhinav");
+        }
+        const changeText = function(){
+            document.querySelector('h1').innerHTML = "30_days_of_js_challenge"
+        }
+
+        const change = setTimeout(changeText,5000)
+
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(change) // jo timeout lgaya hai usko htane k liye 
+            console.log('stopped');
+        })
+
+    </script>
+</body>
+</html>

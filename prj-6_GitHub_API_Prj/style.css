@@ -1,0 +1,427 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url('https://img.freepik.com/free-vector/black-geometric-memphis-social-banner-vector_53876-157880.jpg?w=996&t=st=1699020406~exp=1699021006~hmac=f8e1e74494f54a06275d14e946e27431fca10e37ebeac2baad2d82dc2f52b54e');
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    font-family: 'Patrick Hand', cursive;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: capitalize;
+}
+#head{
+    display: flex;
+    justify-content: center;
+    margin-top: 20PX;
+    align-items: center;
+}
+.search{
+    width: 40vw;
+    padding: 12px 20px;
+    font-size: 1.3vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.483);
+    border: none;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+.search::placeholder{
+    color: white;
+}
+.search-button{
+    padding: 12px 25px;
+    font-size: 1vw;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card{
+    display: flex;
+    
+   
+    margin: 10px 5vw;
+    color: white;
+    padding: 50px 15px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    border-radius: 40px;
+    
+}
+#left{
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+#left img{
+    height: 22vw;
+    border-radius: 50%;
+    border: 1px solid ;
+}
+#left>a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.1vw;
+}
+#left>a>i{
+   padding-left: 5px;
+}
+#right{
+    width: 70%;
+    padding-right: 20px;
+    
+}
+#name{
+    display: flex;
+    justify-content: center;
+}
+#name h1{
+    word-spacing: 20px;
+    font-size: 3vw;
+    text-align: center;
+    border-bottom: 1px solid;
+    width: fit-content;
+    padding: 0px 15px 10px 15px;
+}
+#boxes-1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.box1{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.box1 h3{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.494);
+    font-size: 1.3vw;
+}
+.box1 h2{
+    
+    font-size: 1.5vw;
+}
+#repos{
+    display: flex;
+    
+    
+}
+#repo-right{
+    text-decoration: none;
+    height: 25vh;
+    margin-top: 20px;
+    padding: 15px 25px;
+    overflow:auto ;
+    display: inline-block;
+    width: 80%;
+   margin-left: -15px;
+    
+}
+#repos ul{
+    display: flex ;
+    flex-wrap: wrap;
+    max-height: 200px;
+}
+#repos li{
+   margin-bottom: 13px;
+   margin: 5px 5px;
+   padding: 5px 20px;
+   border: 1px solid rgba(255, 255, 255, 0.523);
+   list-style: none;
+   width: fit-content;
+   border-radius: 20px;
+   cursor: pointer;
+   font-size: 1vw;
+}
+#repos a{
+    text-decoration: none;
+    color: rgba(107, 226, 236, 0.559);
+ 
+}
+#repo-left{
+   
+   
+    margin-left: -10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 20%;
+   
+}
+#right h4{
+    font-size: 1.4vw;
+    color: white;
+    bottom: -10%;
+    right: 0;
+    left: 70%;
+   letter-spacing: 1.5px;
+    position: absolute;
+    width: fit-content;
+    border-bottom: 1px solid;
+    padding: 5px;
+    
+    font-family: sans-serif;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 0px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f137;
+    border-radius: 40px;
+}
+::-webkit-scrollbar-thumb {
+    background: #aaa8a8;
+  }
+  @media (max-width:600px){
+    #main {
+        
+        padding-top: 15px;
+        
+        gap: 10px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 5vw;
+        padding: 45px 15px;
+    }
+    #left{
+        width: 100%;
+        flex-direction: row;
+        justify-content:space-around;
+        padding-left: 0px;
+        align-items: flex-start;
+
+    }
+    #left>a{
+        font-size: 1.4vw;
+        margin-top: 15px;
+        margin-right: 15px;
+        padding: 7px 20px;
+    }
+    #right{
+        width: 100%;
+        padding: 0px 20px;
+        
+    }
+    #name{
+        display: flex;
+        justify-content:end;
+        margin-top: -30px;
+        margin-right: 15px;
+        border-bottom: 1px solid rgba(240, 248, 255, 0.264);
+    }
+    #name h1{
+        word-spacing: 10px;
+        font-size: 3.7vw;
+        text-align: center;
+        border-bottom: none;
+        width: fit-content;
+        padding-bottom: 10px;
+       
+        
+    }
+    .search{
+        font-size:1.9vw;
+    }
+    .search-button{
+        font-size: 1.9vw;
+    }
+    .box1 h3{
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.494);
+        font-size: 1.7vw;
+    }
+    .box1 h2{
+    
+        font-size:2vw;
+    }
+    #boxes-1{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+    #repo-right{
+        text-decoration: none;
+        height: 25vh;
+        margin-top: 15px;
+        padding: 15px 25px;
+        overflow:auto ;
+        display: inline-block;
+        width: 100%;
+       margin-left:0px;
+        
+    }
+    
+    #repos li{
+        margin-bottom: 13px;
+        margin: 5px 5px;
+        padding: 3px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.523);
+        list-style: none;
+        width: fit-content;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1.6vw;
+     }
+     #repo-left{
+        margin-left: -50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 20%;
+       
+    }
+    #right h4{
+        font-size: 2.4vw;
+    }
+  }
+  @media (max-width:440px){
+    #main {
+        
+        padding-top: 15px;
+        
+        gap: 10px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 5vw;
+        padding: 45px 15px;
+    }
+    #left{
+        width: 100%;
+        flex-direction: row;
+        justify-content:space-around;
+        padding-left: 0px;
+        align-items: flex-start;
+
+    }
+    #left>a{
+        font-size: 1.4vw;
+        margin-top: 15px;
+        margin-right: 35px;
+        padding: 7px 20px;
+    }
+    #right{
+        width: 100%;
+        padding: 0px 20px;
+        
+    }
+    #name{
+        display: flex;
+        justify-content:end;
+        margin-top: -20px;
+        margin-right: 15px;
+        border-bottom: 1px solid rgba(240, 248, 255, 0.264);
+    }
+    #name h1{
+        word-spacing: 10px;
+        font-size: 4.2vw;
+        text-align: center;
+        border-bottom: none;
+        width: fit-content;
+        padding-bottom: 10px;
+       
+        
+    }
+    .search{
+        font-size:2.1vw;
+    }
+    .search-button{
+        font-size: 2.2vw;
+    }
+    .box1 h3{
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.494);
+        font-size: 2vw;
+    }
+    .box1 h2{
+    
+        font-size:2.5vw;
+    }
+    #boxes-1{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+    #repo-right{
+        text-decoration: none;
+        height: 25vh;
+        margin-top: 15px;
+        padding: 15px 25px;
+        overflow:auto ;
+        display: inline-block;
+        width: 100%;
+       margin-left:0px;
+        
+    }
+    
+    #repos li{
+        margin-bottom: 13px;
+        margin: 5px 5px;
+        padding: 3px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.523);
+        list-style: none;
+        width: fit-content;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1.9vw;
+     }
+     #repo-left{
+        margin-left: -50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 20%;
+       
+    }
+    #right h4{
+        font-size: 2.9vw;
+    }
+  }
