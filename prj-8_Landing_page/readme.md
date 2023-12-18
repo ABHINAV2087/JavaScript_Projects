@@ -4,4 +4,4 @@ https://codepen.io/abhinav_2003/full/ZEwqoyL
 
 ## Preview
 
-![Alt text](./demo.gif)
+![Alt text](demo.gif)
